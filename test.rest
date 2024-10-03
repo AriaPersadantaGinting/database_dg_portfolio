@@ -1,0 +1,105 @@
+###
+POST http://localhost:3000/api/dg-portfolio/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "raragata13",
+  "password" : "Raragata123",
+  "fullname" : "Rara Agata"
+}
+
+###
+POST http://localhost:3000/api/dg-portfolio/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "raragata13",
+  "password" : "Raragata123"
+}
+
+###
+GET http://localhost:3000/api/dg-portfolio/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 72e2d611-cd96-407a-b2b5-d145f4093cef
+
+###
+PATCH http://localhost:3000/api/dg-portfolio/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 72e2d611-cd96-407a-b2b5-d145f4093cef
+
+{
+  "username":"Goyounjung01",
+  "password":"goyounjung1",
+  "fullname":"Goyounjung"
+}
+
+###
+DELETE http://localhost:3000/api/dg-portfolio/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 72e2d611-cd96-407a-b2b5-d145f4093cef
+
+###
+POST http://localhost:3000/api/dg-portfolio/projects
+Content-Type: application/json
+Accept: application/json
+Authorization: ea9ab10d-430d-4244-8315-5f98324d82cb
+
+{
+  "title":"Example8",
+  "description": "Ini adalah project untuk menampilkan data mengenai diri saya dan saya akan menunjukkan keterampilan saya di project tersebut",
+  "url":"http://example.com",
+  "startDate": "2024-08-26",
+  "technologies": "ExpressJs, ReactJs, TailwindCss, FramerMotion, Postgresql"
+}
+
+###
+GET http://localhost:3000/api/dg-portfolio/projects
+Content-Type: multipart/form-data
+Accept: application/json
+
+
+###
+POST http://localhost:3000/api/dg-portfolio/skills
+Content-Type: application/json
+Accept: application/json
+Authorization: ea9ab10d-430d-4244-8315-5f98324d82cb
+
+{
+  "skillname" : "Javascript",
+  "description" : "example",
+  "tahun" : "Mei 2023"
+}
+
+###
+GET http://localhost:3000/api/dg-portfolio/skills
+Content-Type: application/json
+Accept: application/json
+
+###
+PUT http://localhost:3000/api/dg-portfolio/skills/1
+Content-Type: application/json
+Accept: application/json
+Authorization: ea9ab10d-430d-4244-8315-5f98324d82cb
+
+{
+  "skillname" : "Typescript",
+  "description" : "example1",
+  "tahun" : "Juni 2023"
+}
+
+###
+POST http://localhost:3000/api/dg-portfolio/contact-me
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name":"Hinata",
+  "email": "hinata@gmail.com",
+  "subject":"Partner",
+  "message":"example"
+}
