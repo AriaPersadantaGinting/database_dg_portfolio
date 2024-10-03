@@ -6,6 +6,10 @@ configDotenv();
 
 const port = process.env.PORT;
 
+app.use("/health", (req, res, next) => {
+  res.status(200).send({ status: "200" });
+});
+
 app.listen(port, () => {
   logger.info(`Server is running on port ${port}!`);
 });
