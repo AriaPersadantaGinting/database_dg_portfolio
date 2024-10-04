@@ -2,6 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import { logger } from "./logger.js";
 
 export const prismaClient = new PrismaClient({
+  datasources: {},
   log: [
     { emit: "event", level: "query" },
     { emit: "event", level: "error" },
