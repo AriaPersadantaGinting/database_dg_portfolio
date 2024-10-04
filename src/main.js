@@ -2,8 +2,10 @@ import { app } from "./application/app.js";
 import { configDotenv } from "dotenv";
 import { logger } from "./application/logger.js";
 import { createServer } from "http";
+import supabase from "./config/supabaseClient.js";
 
 configDotenv();
+console.info(supabase);
 
 const port = process.env.PORT;
 
