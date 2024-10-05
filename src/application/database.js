@@ -9,7 +9,6 @@ export const prismaClient = new PrismaClient({
     { emit: "event", level: "warn" },
   ],
 });
-prismaClient.$connect();
 
 // Logging event untuk Prisma Client
 prismaClient.$on("info", (e) => {
