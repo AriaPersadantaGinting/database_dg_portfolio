@@ -47,10 +47,10 @@ Authorization: 72e2d611-cd96-407a-b2b5-d145f4093cef
 POST http://localhost:3000/api/dg-portfolio/projects
 Content-Type: application/json
 Accept: application/json
-Authorization: ea9ab10d-430d-4244-8315-5f98324d82cb
+Authorization: 248e1643-f3a8-4ca5-af23-b3781f35d14c
 
 {
-  "title":"Example8",
+  "title":"Example2",
   "description": "Ini adalah project untuk menampilkan data mengenai diri saya dan saya akan menunjukkan keterampilan saya di project tersebut",
   "url":"http://example.com",
   "startDate": "2024-08-26",
